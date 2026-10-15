@@ -1,0 +1,20 @@
+# DJ MagiCat Studio - Arquivo de Configuração de Ambiente
+# Configurações de latência e periféricos virtuais para o estúdio de som
+
+[Studio_Core]
+NAME=DJ MagiCat Studio
+VERSION=1.0.0
+AUDIO_DRIVER=ASIO_MagiCat_v2
+SAMPLE_RATE=48000
+BUFFER_SIZE=256
+
+[Neon_Lights]
+BRAND=CyberCat_LED
+COLOR_MODE=Audio_Reactive
+PRIMARY_COLOR=#4B0082
+SECONDARY_COLOR=#00FFFF
+
+[Virtual_Instruments]
+SYNTH_01=MagiCat_Chiptune_Wave
+SYNTH_02=Mystic_Bass_808
+EFFECT_01=Illusion_Delay

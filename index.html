@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ MagiCat Studio</title>
+    <link rel="stylesheet" href="./static/style.css" />
+</head>
+
+<body>
+    <div class="studio-scene">
+        <div class="story-panel">
+            <div class="story-topbar">
+                <span class="brand-chip">DJ MAGICAT STUDIO</span>
+                <span class="story-tag">neon studio</span>
+            </div>
+
+            <div class="story-visual">
+                <div class="story-cards">
+                    <div class="story-card card-left">
+                        <span class="card-number">01</span>
+                        <h4>Explore</h4>
+                        <p>Artists, genres and new sounds</p>
+                    </div>
+                    <div class="story-card card-mid">
+                        <span class="card-number">02</span>
+                        <h4>Playlists</h4>
+                        <p>Recommended mixes for every mood</p>
+                    </div>
+                    <div class="story-card card-right">
+                        <span class="card-number">03</span>
+                        <h4>Social</h4>
+                        <p>Share moments and discover friends</p>
+                    </div>
+                </div>
+
+                <div class="cat-stage">
+                    <div class="cat-silhouette large">
+                        <div class="head">
+                            <span class="ear left"></span>
+                            <span class="ear right"></span>
+                            <span class="eye left"></span>
+                            <span class="eye right"></span>
+                            <span class="nose"></span>
+                        </div>
+                        <div class="body"></div>
+                        <div class="headphone left"></div>
+                        <div class="headphone right"></div>
+                    </div>
+                </div>
+
+                <div class="wave-signal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="story-copy">
+                <span id="storyBadge" class="story-badge">Welcome</span>
+                <h1 id="storyTitle">Bem-vindo ao universo sonoro</h1>
+                <p id="storyText">O aplicativo conecta o usuário ao som, ao estilo e à experiência visual em um único
+                    espaço inteligente.</p>
+            </div>
+
+            <div class="step-timeline" id="stepTimeline">
+                <button class="step-item active" data-step="1"><span>1</span> Welcome</button>
+                <button class="step-item" data-step="2"><span>2</span> Explore</button>
+                <button class="step-item" data-step="3"><span>3</span> Player</button>
+                <button class="step-item" data-step="4"><span>4</span> Social</button>
+                <button class="step-item" data-step="5"><span>5</span> Install</button>
+            </div>
+        </div>
+
+        <div class="phone-shell">
+            <div class="phone-statusbar">
+                <span>20:15</span>
+                <div class="status-icons">
+                    <span class="signal">◔</span>
+                    <span class="battery">▣ 85%</span>
+                </div>
+            </div>
+
+            <header class="phone-header">
+                <button class="menu-button" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h2>DJ MAGICAT STUDIO</h2>
+                <div class="status-dot"></div>
+            </header>
+
+            <div class="record-pill">REC <span>00:45</span></div>
+
+            <div class="phone-visual">
+                <div class="cat-silhouette large">
+                    <div class="head">
+                        <span class="ear left"></span>
+                        <span class="ear right"></span>
+                        <span class="eye left"></span>
+                        <span class="eye right"></span>
+                        <span class="nose"></span>
+                    </div>
+                    <div class="body"></div>
+                    <div class="headphone left"></div>
+                    <div class="headphone right"></div>
+                </div>
+            </div>
+
+            <div class="track-strip">
+                <span class="chunk active">C</span>
+                <span class="chunk">C</span>
+                <span class="chunk">A</span>
+                <span class="chunk">G</span>
+                <span class="chunk">E</span>
+            </div>
+
+            <div class="phone-controls">
+                <div class="device-group">
+                    <label>Samba</label>
+                    <select>
+                        <option>Samba</option>
+                    </select>
+                </div>
+                <div class="device-group compact">
+                    <label>Effects</label>
+                    <div class="switch-row">
+                        <button>Reverb</button>
+                        <button>Dist</button>
+                    </div>
+                </div>
+                <div class="device-group compact">
+                    <label>Vocals</label>
+                    <div class="switch-row toggles">
+                        <button class="on">ON</button>
+                        <button>OFF</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="console" class="console-box">
+                <span class="console-tag">[STUDIO]</span> Aguardando a próxima faixa...
+            </div>
+
+            <div class="style-panel">
+                <h3>Vibe da faixa</h3>
+                <div class="genre-selector">
+                    <button class="genre-btn active" data-genre="cyber-trap" aria-pressed="true">Cyberpunk +
+                        Trap</button>
+                    <button class="genre-btn" data-genre="lofi-jazz" aria-pressed="false">Lo-Fi + Space Jazz</button>
+                    <button class="genre-btn" data-genre="swing-glitch" aria-pressed="false">Electro Swing + Glitch
+                        Hop</button>
+                    <button class="genre-btn" data-genre="orchestral-metal" aria-pressed="false">Orquestral + Metal
+                        Industrial</button>
+                    <button class="genre-btn" data-genre="afro-future" aria-pressed="false">Afrobeat + Future
+                        Bass</button>
+                </div>
+                <div id="genreDescription" class="genre-description">
+                    Synths retrô dos anos 80 encontram graves profundos e batidas arrastadas de Trap.
+                </div>
+                <button id="playMixButton" class="play-mix-btn" type="button" aria-pressed="false">Tocar mix</button>
+            </div>
+
+            <div class="bottom-actions">
+                <button id="powerButton" class="power-btn">Ligar estúdio</button>
+                <span id="statusBadge" class="status-badge offline">Offline</span>
+            </div>
+
+            <div id="playlist" class="tracks"></div>
+            <ul id="logList" class="log-list"></ul>
+        </div>
+    </div>
+
+    <script src="./static/app.js"></script>
+</body>
+
+</html>
